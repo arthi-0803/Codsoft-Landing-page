@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <div id="header">
+<section>
+  <div class="circle"></div>
+ <header>
+    <a href="#"><img src ="images/logo.png" class="logo"></a>
+    <ul>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#two">Menu</a></li>
+      <li><a href="#three">Contact</a></li>
+    </ul>
+  </header>
+   <div class="content">
+
+   <div class="textbox">
+        <h2>It's not just Coffee <br>It's <span>Starbucks</span></h2>
+        <p><em>Welcome to Starbucks, the premier destination for coffee enthusiasts and those seeking a moment of comfort in their day. 
+          Our passion for coffee excellence is evident in every cup, as we meticulously source and roast the highest quality beans from around the globe,
+          offering a diverse menu that caters to all tastes from our iconic Caramel Macchiato and seasonal Pumpkin Spice Latte to a variety of handcrafted beverages.</em>
+        </p><br>
+        <a href="#">Learn More</a>
+    </div>
+
+    <div class="imgbox">
+        <img src="images/img1.png" class="starbucks">
+    </div>
+
+  </div>
+
+  <ul class="thumbs">
+    <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeCircleColor('#017143')"></li>
+    <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')"></li>
+    <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')"></li>
+  </ul>
+  <ul class="sci">
+    <li><a href="#"><img src="images/facebook.png"></a></li>
+    <li><a href="#"><img src="images/instagram.png"></a></li>
+    <li><a href="#"><img src="images/twitter.png"></a></li>
+  </ul>
+  
+  </section>
+  <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.starbucks').src=anything;
+    }
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background=color;
+    }
+  </script>
+  </div>
+
+  
+   <div id="two">
+  <div class="menu">
+    <h1>Menu 🍽️</h1>
+    <article class="item">
+      <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+    </article>
+    <article class="item">
+      <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+    </article>
+    <article class="item">
+      <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+    </article>
+    <article class="item">
+      <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+    </article>
+    <article class="item">
+      <p class="flavor">Mocha</p><p class="price">4.50</p>
+    </article>
+    <article class="item">
+      <p class="dessert">Donut</p><p class="price">1.50</p>
+    </article>
+    <article class="item">
+      <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+    </article>
+    <article class="item">
+      <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+    </article>
+    <article class="item">
+      <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+    </article>
+  </div>
+</div>
+</div>
+
+   
+  <div id="three">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>We would love to respond to your queries and help you succeed.<br>Feel free to get in touch with us.</p>
+    <div class="contactbox">
+      <div class="contactleft">
+        <h3>Send your request</h3>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <div class="inputrow">
+            <div class="inputgroup">
+              <input type="hidden" name="access_key" value="b2345fc7-2360-4465-a006-dd248b43795c">
+              <label>Name:</label>
+              <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="inputgroup">
+              <label>Phone:</label>
+              <input type="text" name="number"  placeholder="Enter your number" required>
+            </div>
+            </div>
+            <div class="inputrow">
+            <div class="inputgroup">
+              <label>Email:</label>
+              <input type="text" name="email"  placeholder="Enter your mail" required>
+            </div>
+            <div class="inputgroup">
+              <label>Subject:</label>
+              <input type="text" name="sub"  placeholder="Your queries" required>
+            </div>
+          </div>
+          <label>Message:</label>
+      <textarea  name="message"  rows="5" placeholder="Your Message"></textarea required>
+      <button type="Submit">SEND</button>
+        </form>
+      </div>
+      
+      
+      <div class="contactright">
+        <h3>Reach Us</h3>
+        <table>
+          <tr>
+            <td>Email:</td>
+            <td>starbucks08@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Phone:</td>
+            <td>+1 012 567 8976</td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td>212, Ground Floor, OPP, TR Nagar<br>
+            Bengaluru-567875
+          </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
